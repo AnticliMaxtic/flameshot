@@ -32,3 +32,8 @@ if(ENABLE_IPO)
     message(SEND_ERROR "IPO is not supported: ${output}")
   endif()
 endif()
+
+if(EXISTS ${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+  include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+  conan_basic_setup()
+endif()

@@ -25,6 +25,6 @@ if(CACHE_BINARY)
   message(STATUS "${CACHE_OPTION} found and enabled")
   set(CMAKE_CXX_COMPILER_LAUNCHER ${CACHE_BINARY})
 else()
-  message(WARNING "${CACHE_OPTION} is enabled but was not found. Not using it")
+  message(STATUS "${CACHE_OPTION} is enabled but was not found. Not using it")
 endif()
 
